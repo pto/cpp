@@ -1,12 +1,24 @@
+#include <cmath>
 #include <iostream>
 #include <typeinfo>
 using namespace std;
 
+#define DISPLAY(type, var) cout << #type << ": " << typeid(var).name() << "\n"
+
 int main()
 {
     auto b = true;
-    cout << "bool: " << typeid(b).name() << "\n";
+    DISPLAY(bool, b);
 
     auto ch = 'x';
-    cout << "char: " << typeid(ch).name() << "\n";
+    DISPLAY(char, ch);
+
+    auto i = 123;
+    DISPLAY(int, i);
+
+    auto d = 1.2;
+    DISPLAY(double, d);
+
+    auto z = sqrt(1.0F);
+    DISPLAY(float, z);
 }
