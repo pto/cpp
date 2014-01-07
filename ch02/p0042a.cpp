@@ -19,6 +19,12 @@ int main()
     auto d = 1.2;
     DISPLAY(double, d);
 
-    auto z = sqrt(1.0F);
-    DISPLAY(float, z);
+    auto z1 = sqrt(1.0F);
+    DISPLAY(float, z1);
+
+    auto z2 = sqrt(1.0);
+    DISPLAY(double, z2);
+
+	auto x {123};
+	DISPLAY(no=, x);
 }

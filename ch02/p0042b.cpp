@@ -11,7 +11,7 @@ double sum(const vector<double>& v)
 {
     double sum = 0.0;
     for (double d : v)
-	sum += d;
+		sum += d;
     return sum;
 }
 

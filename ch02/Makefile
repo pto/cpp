@@ -1,1 +1,1 @@
-CPPFLAGS=-std=c++11 -stdlib=libc++ -Wall
+CPPFLAGS=-std=c++11
