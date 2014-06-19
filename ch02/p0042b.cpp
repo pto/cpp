@@ -7,6 +7,7 @@ constexpr double square(double x)
     return x * x;
 }
 
+// constexpr double sum(const vector<double>& v) // error: cannot be constexpr
 double sum(const vector<double>& v)
 {
     double sum = 0.0;
@@ -18,15 +19,17 @@ double sum(const vector<double>& v)
 int main()
 {
     const int dmv = 17;
+	cout << "17: " << dmv << "\n";
     int var = 17;
+	cout << "17: " << var << "\n";
     constexpr double max1 = 1.4 * square(dmv);
-    std::cout << "404.6: " << max1 << "\n";
-    // constexpr double max2 = 1.4 * square(var); // error
+    cout << "404.6: " << max1 << "\n";
+    // constexpr double max2 = 1.4 * square(var); // error: constexpr of var
     const double max3 = 1.4 * square(var);
-    std::cout << "404.6: " << max3 << "\n";
+    cout << "404.6: " << max3 << "\n";
     
     vector<double> v {1.2, 3.4, 4.5};
     const double s1 = sum(v);
-    std::cout << "9.1: " << s1 << "\n";
-    // constexpr double s2 = sum(v); // error
+    cout << "9.1: " << s1 << "\n";
+    // constexpr double s2 = sum(v); // error: no constexpr function
 }
