@@ -7,7 +7,7 @@ void some_function()
     d = d + i;
     std::cout << "9.2: " << d << "\n";
     i = d * i;
-    std::cout << "64: " << i << "\n";
+    std::cout << "64.4 truncated to 64: " << i << "\n";
 }
 
 int main()

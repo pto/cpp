@@ -28,8 +28,6 @@ int main()
     int i1 = 7.2;
     cout << "7: " << i1 << "\n";
 
-    int i2 {7.2};
-    int i3 = {7.2};
-    cout << "warned: 7: " << i2 << "\n";
-    cout << "warned: 7: " << i3 << "\n";
+    // int i2 {7.2};
+    // int i3 = {7.2};
 }
