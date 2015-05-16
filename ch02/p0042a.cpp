@@ -3,28 +3,25 @@
 #include <typeinfo>
 using namespace std;
 
-#define DISPLAY(type, var) cout << #type << ": " << typeid(var).name() << "\n"
+#define DISPLAY(var) cout << #var << ": " << typeid(var).name() << "\n"
 
 int main()
 {
     auto b = true;
-    DISPLAY(bool, b);
+    DISPLAY(b);
 
     auto ch = 'x';
-    DISPLAY(char, ch);
+    DISPLAY(ch);
 
     auto i = 123;
-    DISPLAY(int, i);
+    DISPLAY(i);
 
     auto d = 1.2;
-    DISPLAY(double, d);
+    DISPLAY(d);
 
     auto z1 = sqrt(1.0F);
-    DISPLAY(float, z1);
+    DISPLAY(z1);
 
     auto z2 = sqrt(1.0);
-    DISPLAY(double, z2);
-
-	auto x {123};
-	DISPLAY(no=, x);
+    DISPLAY(z2);
 }
