@@ -5,9 +5,9 @@ void some_function()
     double d = 2.2;
     int i = 7;
     d = d + i;
-    std::cout << "9.2: " << d << "\n";
+    std::cout << "d: " << d << "\n";
     i = d * i;
-    std::cout << "64.4 truncated to 64: " << i << "\n";
+    std::cout << "i: " << i << "\n";
 }
 
 int main()
