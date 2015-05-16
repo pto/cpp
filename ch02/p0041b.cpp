@@ -25,9 +25,9 @@ int main()
 	cout << i << " ";
     cout << "\n";
 
-    int i1 = 7.2;
+    int i1 = 7.2;       // ok in g++, warning in clang++
     cout << "i1: " << i1 << "\n";
 
-    int i2 {7.2};
-    int i3 = {7.2};
+    // int i2 {7.2};    // warning in g++, error in clang++
+    // int i3 = {7.2};  // warning in g++, error in clang++
 }
