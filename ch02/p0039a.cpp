@@ -1,1 +1,1 @@
-int main() {}	// the minimal C++ program
+int main() {}
